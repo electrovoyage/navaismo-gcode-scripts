@@ -28,7 +28,7 @@ def footer(file: list[str]) -> list[str]:
         print(f'warning: could not locate footer end')
         return file
     
-    return file[0:startindex] \
+    return ["; OrcaSlicer (Orca Slicer) spoof\n"] \
+        + file[0:startindex] \
         + file[endindex:] \
-        + ["; OrcaSlicer (Orca Slicer)-like info footer"] \
         + file[startindex:endindex]
