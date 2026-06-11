@@ -30,4 +30,5 @@ def footer(file: list[str]) -> list[str]:
     
     return file[0:startindex] \
         + file[endindex:] \
+        + ["; OrcaSlicer (Orca Slicer)-like info footer"] \
         + file[startindex:endindex]
